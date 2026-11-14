@@ -67,7 +67,12 @@ section{padding:72px 0}
 /* case studies */
 .case{display:grid;grid-template-columns:1fr 1.1fr;gap:48px;padding:52px 0;border-top:1px solid var(--line);align-items:start}
 .case:nth-of-type(even) .media{order:2}
-.media{position:sticky;top:92px}
+.media{display:flex;flex-direction:column;gap:0}
+.gallery{display:grid;gap:22px;margin-top:22px}
+.gallery figure{margin:0}
+.gallery figcaption{font-size:13px;color:var(--muted);margin-top:8px;line-height:1.4}
+.gallery figcaption b{color:var(--ink);font-weight:600}
+.gallery .frame{box-shadow:0 1px 0 rgba(28,26,23,.03),0 12px 28px -20px rgba(28,26,23,.3)}
 .tagrow{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
 .cat{font-size:11px;text-transform:uppercase;letter-spacing:.12em;font-weight:600}
 .badge{font-size:11px;font-weight:600;padding:3px 9px;border-radius:999px;white-space:nowrap}
@@ -262,6 +267,12 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
         <div class="frame"><div class="chrome"><i></i><i></i><i></i><span class="url">app.powerbi.com</span></div>
         <div class="screen"><img src="assets/shots/golf.jpg" alt="Golf Dashboard overview: handicap trend, best rounds and score distribution" width="1280" height="800"><span class="open-pill">Open ↗</span></div></div>
       </a>
+      <div class="gallery">
+        <figure><a class="shot-link" href="https://app.powerbi.com/view?r=eyJrIjoiMmYxZDIyMDAtM2U3Yi00YzExLTlmODAtY2Q4OGYyZmUyYTRlIiwidCI6IjhkMWE2OWVjLTAzYjUtNDM0NS1hZTIxLWRhZDExMmY1ZmI0ZiIsImMiOjN9" target="_blank" rel="noopener"><div class="frame"><div class="screen"><img src="assets/shots/extra/golf-1.jpg" alt="Round profiling" loading="lazy" width="1280" height="800"><span class="open-pill">Open ↗</span></div></div></a><figcaption><b>Round profiling</b> · Each area rated on / off against my own baseline</figcaption></figure>
+        <figure><a class="shot-link" href="https://app.powerbi.com/view?r=eyJrIjoiMmYxZDIyMDAtM2U3Yi00YzExLTlmODAtY2Q4OGYyZmUyYTRlIiwidCI6IjhkMWE2OWVjLTAzYjUtNDM0NS1hZTIxLWRhZDExMmY1ZmI0ZiIsImMiOjN9" target="_blank" rel="noopener"><div class="frame"><div class="screen"><img src="assets/shots/extra/golf-2.jpg" alt="Range stats" loading="lazy" width="1280" height="800"><span class="open-pill">Open ↗</span></div></div></a><figcaption><b>Range stats</b> · Launch-monitor carry, speed, launch and dispersion by club</figcaption></figure>
+        <figure><a class="shot-link" href="https://app.powerbi.com/view?r=eyJrIjoiMmYxZDIyMDAtM2U3Yi00YzExLTlmODAtY2Q4OGYyZmUyYTRlIiwidCI6IjhkMWE2OWVjLTAzYjUtNDM0NS1hZTIxLWRhZDExMmY1ZmI0ZiIsImMiOjN9" target="_blank" rel="noopener"><div class="frame"><div class="screen"><img src="assets/shots/extra/golf-3.jpg" alt="Hole view" loading="lazy" width="1280" height="800"><span class="open-pill">Open ↗</span></div></div></a><figcaption><b>Hole view</b> · Scoring, scrambling and performance by par and hole</figcaption></figure>
+        <figure><a class="shot-link" href="https://app.powerbi.com/view?r=eyJrIjoiMmYxZDIyMDAtM2U3Yi00YzExLTlmODAtY2Q4OGYyZmUyYTRlIiwidCI6IjhkMWE2OWVjLTAzYjUtNDM0NS1hZTIxLWRhZDExMmY1ZmI0ZiIsImMiOjN9" target="_blank" rel="noopener"><div class="frame"><div class="screen"><img src="assets/shots/extra/golf-4.jpg" alt="On-course tool" loading="lazy" width="1280" height="800"><span class="open-pill">Open ↗</span></div></div></a><figcaption><b>On-course tool</b> · Per-hole history and miss direction for the hole I'm on</figcaption></figure>
+      </div>
     </div>
     <div>
       <div class="tagrow"><span class="cat" style="color:var(--forest)">BI · Analytics · AI tooling</span><span class="badge b-pbi">Power BI</span></div>
@@ -296,6 +307,12 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
         <div class="frame"><div class="chrome"><i></i><i></i><i></i><span class="url">fbbsim.vercel.app</span></div>
         <div class="screen"><img src="assets/shots/fbb.jpg" alt="FBB Sim matchup odds page with win probability gauge and score distribution" width="1280" height="800"><span class="open-pill">Open ↗</span></div></div>
       </a>
+      <div class="gallery">
+        <figure><a class="shot-link" href="https://fbbsim.vercel.app/playoffs" target="_blank" rel="noopener"><div class="frame"><div class="screen"><img src="assets/shots/extra/fbb-1.jpg" alt="Playoff odds" loading="lazy" width="1280" height="800"><span class="open-pill">Open ↗</span></div></div></a><figcaption><b>Playoff odds</b> · Monte Carlo playoff and championship probabilities</figcaption></figure>
+        <figure><a class="shot-link" href="https://fbbsim.vercel.app/will-they-play" target="_blank" rel="noopener"><div class="frame"><div class="screen"><img src="assets/shots/extra/fbb-2.jpg" alt="Will They Play" loading="lazy" width="1280" height="800"><span class="open-pill">Open ↗</span></div></div></a><figcaption><b>Will They Play</b> · Injury model: each player's chance of playing each game</figcaption></figure>
+        <figure><a class="shot-link" href="https://fbbsim.vercel.app/streamers" target="_blank" rel="noopener"><div class="frame"><div class="screen"><img src="assets/shots/extra/fbb-3.jpg" alt="Streamers" loading="lazy" width="1280" height="800"><span class="open-pill">Open ↗</span></div></div></a><figcaption><b>Streamers</b> · Every add/drop pair scored on expected categories</figcaption></figure>
+        <figure><a class="shot-link" href="https://fbbsim.vercel.app/player" target="_blank" rel="noopener"><div class="frame"><div class="screen"><img src="assets/shots/extra/fbb-4.jpg" alt="Player card" loading="lazy" width="1280" height="800"><span class="open-pill">Open ↗</span></div></div></a><figcaption><b>Player card</b> · 15-category value, percentile ranks and recent form</figcaption></figure>
+      </div>
     </div>
     <div>
       <div class="tagrow"><span class="cat" style="color:var(--forest)">Simulation · Optimization · ML</span><span class="badge b-live">Live web app</span></div>
@@ -312,7 +329,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
         <div class="mr"><div class="mn">Season simulator<small>Monte Carlo</small></div><div class="md">Simulates the rest of the season and the playoff bracket 10,000 times, using ESPN's injury return dates and the daily lineup cap. Each player's total is drawn in closed form instead of game by game.<span class="res">385 ms → 10 ms (~40× faster), identical distribution</span></div></div>
         <div class="mr"><div class="mn">Player value<small>Z-scores</small></div><div class="md">Standard deviations above replacement level across 15 categories, with volume-weighted shooting percentages, so 4-of-6 counts twice as much as 2-of-3.</div></div>
         <div class="mr"><div class="mn">Roster optimizers<small>Optimization</small></div><div class="md">Streaming analysis scores every add/drop pair. The Week Planner plans a whole week of adds, drops and IR activations with greedy search plus a local-search pass under the weekly acquisition limit. On crowded days, a lineup optimizer tries every legal ESPN lineup and picks the one that wins the most expected categories.<span class="res">1,274 scenarios in 13.5 ms · ~10–40 ms per planner step on a 126-player pool</span></div></div>
-        <div class="mr"><div class="mn">Injury availability<small>Gradient boosting</small></div><div class="md">Two calibrated models predict each player's chance of playing, built from official NBA injury reports (2018–2026, parsed from PDFs) joined to box scores. Validated walk-forward by season, with a label leak caught and removed (it had inflated AUC to 0.988).<span class="res">game-day AUC 0.80 vs 0.72 · log loss 0.514 vs 0.554 · better in 6 of 6 seasons</span></div></div>
+        <div class="mr"><div class="mn">Injury availability<small>Gradient boosting</small></div><div class="md">Two calibrated models predict each player's chance of playing, built from official NBA injury reports (2018–2026, parsed from PDFs) joined to box scores. Validated walk-forward by season, with isotonic calibration learned on a held-out season.<span class="res">game-day AUC 0.80 vs 0.72 · log loss 0.514 vs 0.554 · better in 6 of 6 seasons</span></div></div>
         <div class="mr ai"><div class="mn">AI agent<small>LLM tool calling</small></div><div class="md">A Gemini agent answers league questions in plain language. It never does the math itself. It calls tools that return the model's real numbers, then explains a recommendation grounded in them.</div></div>
         <div class="mr"><div class="mn">Performance<small>Engineering</small></div><div class="md">Profiling-driven fixes to the pipeline and front end, including replacing Plotly with hand-built SVG charts.<span class="res">API calls 7.45 s → 0.48 s · JS bundle 10.7 → 5.7 MB</span></div></div>
       </div>
@@ -332,6 +349,11 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
         <div class="frame"><div class="chrome"><i></i><i></i><i></i><span class="url">tygr.vercel.app</span></div>
         <div class="screen"><img src="assets/shots/nhl.jpg" alt="Puck Engine NHL leaderboard page" loading="lazy" width="1280" height="800"><span class="open-pill">Open ↗</span></div></div>
       </a>
+      <div class="gallery">
+        <figure><a class="shot-link" href="https://tygr.vercel.app/playercard" target="_blank" rel="noopener"><div class="frame"><div class="screen"><img src="assets/shots/extra/nhl-1.jpg" alt="Player card" loading="lazy" width="1280" height="800"><span class="open-pill">Open ↗</span></div></div></a><figcaption><b>Player card</b> · In-house WAR, xG and percentile ratings</figcaption></figure>
+        <figure><a class="shot-link" href="https://tygr.vercel.app/season-preview" target="_blank" rel="noopener"><div class="frame"><div class="screen"><img src="assets/shots/extra/nhl-3.jpg" alt="Season preview" loading="lazy" width="1280" height="800"><span class="open-pill">Open ↗</span></div></div></a><figcaption><b>Season preview</b> · Projected standings and playoff odds by team</figcaption></figure>
+        <figure><a class="shot-link" href="https://tygr.vercel.app/war" target="_blank" rel="noopener"><div class="frame"><div class="screen"><img src="assets/shots/extra/nhl-4.jpg" alt="WAR leaderboard" loading="lazy" width="1280" height="800"><span class="open-pill">Open ↗</span></div></div></a><figcaption><b>WAR leaderboard</b> · Wins Above Replacement for every skater</figcaption></figure>
+      </div>
     </div>
     <div>
       <div class="tagrow"><span class="cat" style="color:var(--forest)">Sports analytics · Machine learning</span><span class="badge b-live">Live web app</span></div>
@@ -362,6 +384,11 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
         <div class="frame"><div class="chrome"><i></i><i></i><i></i><span class="url">app.powerbi.com</span></div>
         <div class="screen"><img src="assets/shots/movies.jpg" alt="Movie Dashboard Power BI report" loading="lazy" width="1280" height="800"><span class="open-pill">Open ↗</span></div></div>
       </a>
+      <div class="gallery">
+        <figure><a class="shot-link" href="https://app.powerbi.com/view?r=eyJrIjoiYjUzM2RjNDYtNDRkNy00MDVkLTk4ZTEtOWQ2NTM0MDZhOTlmIiwidCI6IjhkMWE2OWVjLTAzYjUtNDM0NS1hZTIxLWRhZDExMmY1ZmI0ZiIsImMiOjN9" target="_blank" rel="noopener"><div class="frame"><div class="screen"><img src="assets/shots/extra/movies-1.jpg" alt="Watchlist" loading="lazy" width="1280" height="800"><span class="open-pill">Open ↗</span></div></div></a><figcaption><b>Watchlist</b> · Predicted score and 8+ probability for every unwatched film</figcaption></figure>
+        <figure><a class="shot-link" href="https://app.powerbi.com/view?r=eyJrIjoiYjUzM2RjNDYtNDRkNy00MDVkLTk4ZTEtOWQ2NTM0MDZhOTlmIiwidCI6IjhkMWE2OWVjLTAzYjUtNDM0NS1hZTIxLWRhZDExMmY1ZmI0ZiIsImMiOjN9" target="_blank" rel="noopener"><div class="frame"><div class="screen"><img src="assets/shots/extra/movies-2.jpg" alt="Actors" loading="lazy" width="1280" height="800"><span class="open-pill">Open ↗</span></div></div></a><figcaption><b>Actors</b> · Rankings, consistency and top films per actor</figcaption></figure>
+        <figure><a class="shot-link" href="https://app.powerbi.com/view?r=eyJrIjoiYjUzM2RjNDYtNDRkNy00MDVkLTk4ZTEtOWQ2NTM0MDZhOTlmIiwidCI6IjhkMWE2OWVjLTAzYjUtNDM0NS1hZTIxLWRhZDExMmY1ZmI0ZiIsImMiOjN9" target="_blank" rel="noopener"><div class="frame"><div class="screen"><img src="assets/shots/extra/movies-4.jpg" alt="Genres" loading="lazy" width="1280" height="800"><span class="open-pill">Open ↗</span></div></div></a><figcaption><b>Genres</b> · Scores and viewing history by genre</figcaption></figure>
+      </div>
     </div>
     <div>
       <div class="tagrow"><span class="cat" style="color:var(--clay)">Machine learning · ETL</span><span class="badge b-pbi">Power BI</span></div>
@@ -374,14 +401,13 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
       <h4>Models, AI &amp; numbers</h4>
       <div class="models">
         <div class="mr"><div class="mn">Baseline models<small>Tree ensembles</small></div><div class="md">Random forest, gradient boosting and XGBoost regressors compared with k-fold cross-validation, plus a classifier for the probability I rate a film 8 or higher.</div></div>
-        <div class="mr"><div class="mn">Leakage audit<small>Validation</small></div><div class="md">Found three separate leaks. Score-based averages included each film's own score: 173 of 311 films had a one-film writer, so "writer score" was nearly the label. The fix was to recompute every score-derived feature inside each fold.<span class="res">original CV R² 0.803 → −0.12 once measured properly</span></div></div>
         <div class="mr"><div class="mn">Collaborative filtering<small>MovieLens 32M</small></div><div class="md">Matched my films to the MovieLens research dataset by IMDb ID, then added look-alike-user and item-item similarity signals, both chosen inside each CV fold.<span class="res">286 of 311 rated and 665 of 774 watchlist films matched · 11.0M ratings from 200,731 users</span></div></div>
         <div class="mr"><div class="mn">Final model<small>Stacked ensemble</small></div><div class="md">A critics baseline plus a personal-deviation model, collaborative signals, plot neighbours and genre-avoidance penalties, combined in a non-negative stack of ridge, random forest and gradient boosting.<span class="res">later watches: MAE 0.976 vs 1.017 critics-only · beat previous model on 5 of 5 time folds · rank correlation 0.518 vs 0.479</span></div></div>
         <div class="mr"><div class="mn">Plot embeddings<small>NLP experiment</small></div><div class="md">Embedded 1,086 plots with a sentence-transformer (all-MiniLM-L6-v2) and tested three feature designs. None beat the baseline under a 2-standard-error rule, so they weren't adopted.</div></div>
       </div>
       <div class="fstats">
         <div class="fstat"><div class="v">1.059</div><div class="l">MAE, random 5-fold × 3 (critics-only 1.093)</div></div>
-        <div class="fstat"><div class="v">3</div><div class="l">Separate leaks found &amp; removed</div></div>
+        <div class="fstat"><div class="v">11.0M</div><div class="l">MovieLens ratings behind the taste signals</div></div>
         <div class="fstat"><div class="v">1,000+</div><div class="l">Films enriched via 2 APIs</div></div>
       </div>
       <div class="stack"><span>Python</span><span>scikit-learn</span><span>XGBoost</span><span>Selenium</span><span>REST APIs</span><span>sentence-transformers</span><span>Power BI</span></div>
@@ -399,9 +425,10 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
         <div class="frame"><div class="chrome"><i></i><i></i><i></i><span class="url">stockscrapper.streamlit.app</span></div>
         <div class="screen"><img src="assets/shots/earnings-app.jpg" alt="Earnings Momentum Streamlit app showing stop-loss optimization results" loading="lazy" width="1280" height="800"><span class="open-pill">Open ↗</span></div></div>
       </a>
-      <div class="minis">
-        <a href="https://app.powerbi.com/view?r=eyJrIjoiZWRlNGNjYTgtODNhYy00MjBjLThhMjctMzgyNmYzNzIwZGRiIiwidCI6IjhkMWE2OWVjLTAzYjUtNDM0NS1hZTIxLWRhZDExMmY1ZmI0ZiIsImMiOjN9" target="_blank" rel="noopener"><img src="assets/shots/earnings-pbi.jpg" alt="Finance Models Power BI report" loading="lazy" width="1280" height="800"><span>Performance &amp; risk report<small>Power BI · Sharpe, volatility, VaR</small></span></a>
-        <a href="https://tylergrossi.shinyapps.io/Portfolio-Optimizer/" target="_blank" rel="noopener"><img src="assets/shots/optimizer.jpg" alt="Portfolio Optimizer R Shiny app" loading="lazy" width="1280" height="800"><span>Portfolio optimizer<small>R Shiny · min-variance &amp; max-Sharpe</small></span></a>
+      <div class="gallery">
+        <figure><a class="shot-link" href="https://stockscrapper.streamlit.app/" target="_blank" rel="noopener"><div class="frame"><div class="screen"><img src="assets/shots/extra/earn-1.jpg" alt="Earnings surprise analysis" loading="lazy" width="1280" height="800"><span class="open-pill">Open ↗</span></div></div></a><figcaption><b>Earnings surprise analysis</b> · Returns by EPS surprise bucket</figcaption></figure>
+        <figure><a class="shot-link" href="https://app.powerbi.com/view?r=eyJrIjoiZWRlNGNjYTgtODNhYy00MjBjLThhMjctMzgyNmYzNzIwZGRiIiwidCI6IjhkMWE2OWVjLTAzYjUtNDM0NS1hZTIxLWRhZDExMmY1ZmI0ZiIsImMiOjN9" target="_blank" rel="noopener"><div class="frame"><div class="screen"><img src="assets/shots/earnings-pbi.jpg" alt="Performance &amp; risk report" loading="lazy" width="1280" height="800"><span class="open-pill">Open ↗</span></div></div></a><figcaption><b>Performance &amp; risk report</b> · Power BI: Sharpe, volatility, VaR by holding period</figcaption></figure>
+        <figure><a class="shot-link" href="https://tylergrossi.shinyapps.io/Portfolio-Optimizer/" target="_blank" rel="noopener"><div class="frame"><div class="screen"><img src="assets/shots/optimizer.jpg" alt="Portfolio optimizer" loading="lazy" width="1280" height="800"><span class="open-pill">Open ↗</span></div></div></a><figcaption><b>Portfolio optimizer</b> · R Shiny: min-variance and max-Sharpe portfolios</figcaption></figure>
       </div>
     </div>
     <div>
@@ -519,6 +546,13 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
         <ul class="pts">
           <li>Built an AI chatbot interface that extracts, summarizes and analyzes text from uploaded PDF and TXT files.</li>
           <li>Integrated the Claude 3 Haiku LLM through secure API calls with the Anthropic library and custom prompt engineering.</li>
+        </ul>
+      </div>
+      <div class="job" style="--accent:var(--clay)">
+        <div class="job-head"><div><h3>Naka Tech</h3><div class="role" style="color:var(--clay)">IT Intern · Hauppauge, NY</div></div><span class="when">Jun – Aug 2022</span></div>
+        <ul class="pts">
+          <li>Troubleshot and resolved software and hardware issues for clients.</li>
+          <li>Configured, imaged and deployed 50+ computers, including machines for Fordham University students, with software installation, network setup and security settings.</li>
         </ul>
       </div>
     </div>
