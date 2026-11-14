@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tyler Grossi · Data Analytics &amp; Quantitative Modeling</title>
-<meta name="description" content="Portfolio of Tyler Grossi: sports analytics models, quantitative finance strategies, machine learning pipelines and Power BI reports, all built from scratch and running live.">
-<meta property="og:title" content="Tyler Grossi · Data Analytics &amp; Quantitative Modeling">
-<meta property="og:description" content="Sports analytics models, quantitative finance strategies, ML pipelines and Power BI reports, built from scratch and running live.">
+<title>Tyler Grossi · Data Analytics &amp; Quantitative Finance</title>
+<meta name="description" content="Portfolio of Tyler Grossi: predictive models, data pipelines, web applications and Power BI reports in sports analytics and quantitative finance.">
+<meta property="og:title" content="Tyler Grossi · Data Analytics &amp; Quantitative Finance">
+<meta property="og:description" content="Predictive models, data pipelines, web applications and Power BI reports in sports analytics and quantitative finance.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="assets/shots/fbb.jpg">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231c1a17'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='32' fill='white' text-anchor='middle'%3ETG%3C/text%3E%3C/svg%3E">
@@ -28,28 +28,23 @@ body{background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-seri
 a{color:inherit}
 img{max-width:100%;display:block}
 .wrap{max-width:1160px;margin:0 auto;padding:0 32px}
-.mono{font-family:"JetBrains Mono",monospace}
 
 /* nav */
 nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.9);backdrop-filter:blur(10px);border-bottom:1px solid transparent;transition:border-color .2s}
 nav.scrolled{border-color:var(--line)}
 nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
-.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:600;white-space:nowrap}
-.mark{width:32px;height:32px;border-radius:9px;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:Fraunces,serif;font-size:14px}
+.brand{text-decoration:none;font-weight:600;white-space:nowrap}
 nav ul{display:flex;gap:26px;list-style:none;font-size:14px;align-items:center}
 nav ul a{text-decoration:none;color:var(--muted);transition:color .15s}
 nav ul a:hover{color:var(--ink)}
 nav ul a.navbtn{color:#fff;background:var(--ink);padding:7px 14px;border-radius:9px}
 
 /* hero */
-.hero{padding:80px 0 52px}
+.hero{padding:76px 0 52px}
 .eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--forest);font-weight:600}
-.hero h1{font-family:Fraunces,serif;font-weight:400;font-size:clamp(38px,5.4vw,64px);line-height:1.05;letter-spacing:-.02em;margin-top:16px;max-width:880px}
-.hero h1 em{font-style:italic;color:var(--forest)}
-.hero p.lead{font-size:18px;color:var(--ink2);max-width:680px;margin-top:22px}
-.edu{display:flex;align-items:center;gap:10px;margin-top:20px;font-size:14px;color:var(--ink2)}
-.edu b{font-weight:600}
-.edu .dot{width:6px;height:6px;border-radius:50%;background:var(--forest)}
+.hero h1{font-family:Fraunces,serif;font-weight:400;font-size:clamp(42px,5.6vw,66px);line-height:1.05;letter-spacing:-.02em;margin-top:14px}
+.hero p.lead{font-size:18px;color:var(--ink2);max-width:720px;margin-top:18px}
+.hero p.sub{font-size:16px;color:var(--muted);max-width:720px;margin-top:12px}
 .cta{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}
 .btn{display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border-radius:10px;font-weight:500;font-size:14px;text-decoration:none;border:1px solid var(--ink);transition:transform .15s, border-color .15s}
 .btn.dark{background:var(--ink);color:#fff}
@@ -57,7 +52,7 @@ nav ul a.navbtn{color:#fff;background:var(--ink);padding:7px 14px;border-radius:
 .btn.sm{padding:8px 13px;font-size:13px}
 .btn:hover{transform:translateY(-1px)}
 .btn.light:hover{border-color:var(--ink)}
-.kpis{display:grid;grid-template-columns:repeat(4,1fr);margin-top:52px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);margin-top:48px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .kpi{padding:22px 0 22px 24px;border-left:1px solid var(--line)}
 .kpi:first-child{border-left:0;padding-left:0}
 .kpi .v{font-family:"JetBrains Mono",monospace;font-size:30px;font-weight:500;letter-spacing:-.02em}
@@ -70,7 +65,7 @@ section{padding:72px 0}
 .sec-head p{color:var(--muted);max-width:480px;font-size:15px}
 
 /* case studies */
-.case{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;padding:48px 0;border-top:1px solid var(--line);align-items:start}
+.case{display:grid;grid-template-columns:1fr 1.1fr;gap:48px;padding:52px 0;border-top:1px solid var(--line);align-items:start}
 .case:nth-of-type(even) .media{order:2}
 .media{position:sticky;top:92px}
 .tagrow{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
@@ -78,23 +73,33 @@ section{padding:72px 0}
 .badge{font-size:11px;font-weight:600;padding:3px 9px;border-radius:999px;white-space:nowrap}
 .b-live{color:var(--forest);background:var(--forest-bg)}
 .b-pbi{color:var(--ochre);background:var(--ochre-bg)}
-.b-prog{color:var(--clay);background:var(--clay-bg)}
-.b-code{color:var(--plum);background:var(--plum-bg)}
 .case h3{font-family:Fraunces,serif;font-weight:600;font-size:31px;letter-spacing:-.01em;margin-top:10px;line-height:1.15}
 .case .plain{font-size:17px;color:var(--ink);margin-top:10px}
-.case h4{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-top:24px}
-.case ul.pts{list-style:none;margin-top:10px;display:grid;gap:9px}
-.case ul.pts li{position:relative;padding-left:18px;color:var(--ink2);font-size:15px}
-.case ul.pts li::before{content:"";position:absolute;left:0;top:10px;width:7px;height:7px;border-radius:2px;background:var(--accent,var(--forest))}
-.case ul.pts b{color:var(--ink);font-weight:600}
+.case h4{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-top:26px}
+ul.pts{list-style:none;margin-top:10px;display:grid;gap:8px}
+ul.pts li{position:relative;padding-left:18px;color:var(--ink2);font-size:15px}
+ul.pts li::before{content:"";position:absolute;left:0;top:10px;width:7px;height:7px;border-radius:2px;background:var(--accent,var(--forest))}
+ul.pts b{color:var(--ink);font-weight:600}
 .fstats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:22px}
 .fstat{border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:var(--paper)}
 .fstat .v{font-family:"JetBrains Mono",monospace;font-size:20px;font-weight:500;color:var(--accent,var(--ink))}
 .fstat .l{font-size:12px;color:var(--muted);line-height:1.35;margin-top:2px}
+
+/* models table */
+.models{margin-top:12px;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff}
+.mr{display:grid;grid-template-columns:150px 1fr;gap:16px;padding:13px 16px;border-top:1px solid var(--line)}
+.mr:first-child{border-top:0}
+.mr .mn{font-weight:600;font-size:13.5px;line-height:1.4}
+.mr .mn small{display:block;font-weight:500;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent,var(--forest));margin-top:3px}
+.mr .md{font-size:14px;color:var(--ink2);line-height:1.5}
+.mr .res{display:block;margin-top:6px;font-family:"JetBrains Mono",monospace;font-size:12px;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:7px;padding:5px 9px;line-height:1.5}
+.mr.ai{background:linear-gradient(90deg,var(--plum-bg),#fff 70%)}
+.mr.ai .mn small{color:var(--plum)}
+
 .stack{display:flex;flex-wrap:wrap;gap:6px;margin-top:20px}
 .stack span{font-size:12px;padding:4px 10px;border-radius:999px;border:1px solid var(--line);color:var(--ink2);background:#fff}
-.actions{display:flex;gap:10px;margin-top:24px;flex-wrap:wrap}
-.note{font-size:12.5px;color:var(--muted);margin-top:14px;font-style:italic}
+.actions{display:flex;gap:10px;margin-top:22px;flex-wrap:wrap}
+.note{font-size:12.5px;color:var(--muted);margin-top:12px;font-style:italic}
 
 /* browser frame */
 .shot-link{display:block;text-decoration:none}
@@ -110,40 +115,51 @@ section{padding:72px 0}
 .minis{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:14px}
 .minis a{display:block;text-decoration:none;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff;transition:border-color .15s, transform .15s}
 .minis a:hover{border-color:var(--ink);transform:translateY(-2px)}
-.minis img{aspect-ratio:16/9;object-fit:cover;object-position:top;width:100%;border-bottom:1px solid var(--line)}
+.minis img{aspect-ratio:16/10;height:auto;object-fit:cover;object-position:top left;width:100%;border-bottom:1px solid var(--line)}
 .minis span{display:block;padding:8px 11px;font-size:12.5px;font-weight:600}
 .minis small{display:block;font-weight:400;color:var(--muted);font-size:11.5px}
-
-/* text-only panel for projects without a live demo */
-.panel{border:1px solid var(--line);border-radius:var(--r);background:var(--paper);padding:30px;aspect-ratio:16/10;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden}
-.panel .big{font-family:Fraunces,serif;font-size:26px;line-height:1.2;max-width:420px}
-.panel .q{font-family:"JetBrains Mono",monospace;font-size:12.5px;color:var(--muted);display:grid;gap:6px}
-.panel .q b{color:var(--clay);font-weight:500}
 
 /* grid */
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
 .card{display:flex;flex-direction:column}
 .card .meta{display:flex;justify-content:space-between;align-items:center;margin-top:16px;gap:8px}
 .card h5{font-family:Fraunces,serif;font-weight:600;font-size:21px;margin-top:6px}
-.card p{color:var(--muted);font-size:14px;margin-top:4px}
-.card .cstats{display:flex;gap:14px;flex-wrap:wrap;margin-top:10px;font-family:"JetBrains Mono",monospace;font-size:12px;color:var(--ink2)}
+.card p{color:var(--ink2);font-size:14px;margin-top:4px}
+.card ul.pts{gap:5px;margin-top:8px}
+.card ul.pts li{font-size:13.5px;padding-left:15px}
+.card ul.pts li::before{width:6px;height:6px;top:9px}
 .card .links{display:flex;gap:14px;margin-top:10px;font-size:13px;font-weight:500}
 .card .links a{text-decoration:none;border-bottom:1px solid var(--line)}
 .card .links a:hover{border-color:var(--ink)}
-
-/* also built list */
 .also{display:grid;grid-template-columns:repeat(2,1fr);gap:0 48px;margin-top:48px;border-top:1px solid var(--line)}
 .also div{padding:16px 0;border-bottom:1px solid var(--line)}
 .also b{font-weight:600}
 .also span{color:var(--muted);font-size:14px;display:block;margin-top:2px}
 
+/* experience */
+.xp{background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.xp-grid{display:grid;grid-template-columns:1.45fr 1fr;gap:28px;align-items:start}
+.job,.edu-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:26px 28px}
+.job + .job{margin-top:18px}
+.job-head{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:baseline}
+.job h3,.edu-card h3{font-family:Fraunces,serif;font-weight:600;font-size:22px}
+.job .role{color:var(--forest);font-weight:600;font-size:14px;margin-top:2px}
+.job .when{font-family:"JetBrains Mono",monospace;font-size:12px;color:var(--muted)}
+.edu-card .deg{margin-top:12px;font-size:14px;color:var(--ink2)}
+.edu-card .deg b{display:block;color:var(--ink);font-weight:600}
+.edu-card .facts{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}
+.edu-card .facts > div{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+.edu-card .facts .v{font-family:"JetBrains Mono",monospace;font-size:18px}
+.edu-card .facts .l{font-size:12px;color:var(--muted)}
+.edu-card .aw{margin-top:16px;font-size:13.5px;color:var(--ink2)}
+.edu-card .aw b{font-weight:600;color:var(--ink)}
+
 /* BI band */
-.bi{background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .bi-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:56px;align-items:start}
 .bi h2{font-family:Fraunces,serif;font-weight:400;font-size:38px;line-height:1.1;letter-spacing:-.015em;margin-top:12px}
 .bi p{color:var(--ink2);margin-top:14px}
 .bi-list{display:grid;gap:14px}
-.bi-item{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+.bi-item{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
 .bi-item b{font-weight:600}
 .bi-item span{display:block;color:var(--ink2);font-size:14px;margin-top:4px}
 .bi-item code{font-family:"JetBrains Mono",monospace;font-size:12px;background:var(--ochre-bg);color:var(--ochre);padding:1px 6px;border-radius:5px}
@@ -155,9 +171,11 @@ section{padding:72px 0}
 .skills .tags span{font-size:13px;padding:5px 11px;border-radius:8px;background:var(--paper);border:1px solid var(--line)}
 
 /* contact */
-.contact{background:var(--ink);color:#fff;border-radius:20px;padding:56px;display:flex;justify-content:space-between;align-items:center;gap:32px;flex-wrap:wrap}
-.contact h2{font-family:Fraunces,serif;font-weight:400;font-size:36px;line-height:1.15;max-width:560px}
+.contact{background:var(--ink);color:#fff;border-radius:20px;padding:52px 56px;display:grid;grid-template-columns:1fr auto;align-items:center;gap:32px}
+.contact h2{font-family:Fraunces,serif;font-weight:400;font-size:34px;line-height:1.15;max-width:560px}
 .contact p{color:#cfc7ba;margin-top:10px;max-width:520px}
+.contact .clinks{display:grid;gap:10px;min-width:280px}
+.contact .btn{justify-content:space-between}
 .contact .btn.light{background:transparent;color:#fff;border-color:rgba(255,255,255,.3)}
 .contact .btn.light:hover{border-color:#fff}
 .contact .btn.dark{background:#fff;color:var(--ink);border-color:#fff}
@@ -174,90 +192,100 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   .case:nth-of-type(even) .media{order:0}
   .media{position:static}
   .grid{grid-template-columns:repeat(2,1fr)}
-  .bi-grid{grid-template-columns:1fr;gap:32px}
+  .bi-grid,.xp-grid{grid-template-columns:1fr;gap:28px}
   .skills{grid-template-columns:repeat(2,1fr)}
+  .contact{grid-template-columns:1fr}
   nav ul li.hide-m{display:none}
 }
 @media (max-width:640px){
   .wrap{padding:0 16px}
-  .hero{padding:52px 0 40px}
+  .hero{padding:48px 0 40px}
   .grid,.also{grid-template-columns:1fr}
   .kpis{grid-template-columns:repeat(2,1fr)}
   .kpi:nth-child(3){border-left:0;padding-left:0}
   .kpi:nth-child(n+3){border-top:1px solid var(--line)}
   .fstats{grid-template-columns:1fr 1fr}
+  .mr{grid-template-columns:1fr;gap:4px}
   .skills{grid-template-columns:1fr}
-  .contact{padding:36px 24px}
-  .contact h2{font-size:28px}
+  .job,.edu-card{padding:20px}
+  .contact{padding:32px 22px}
+  .contact h2{font-size:27px}
+  .contact .clinks{min-width:0}
   .sec-head h2,.bi h2{font-size:32px}
-  .panel{padding:20px}
-  .panel .big{font-size:20px}
 }
 </style>
 </head>
 <body class="no-js">
 
 <nav id="nav"><div class="wrap">
-  <a class="brand" href="#top"><span class="mark">TG</span>Tyler Grossi</a>
+  <a class="brand" href="#top">Tyler Grossi</a>
   <ul>
     <li class="hide-m"><a href="#work">Projects</a></li>
+    <li class="hide-m"><a href="#experience">Experience</a></li>
     <li class="hide-m"><a href="#bi">Power BI</a></li>
     <li class="hide-m"><a href="#skills">Skills</a></li>
-    <li><a class="navbtn" href="#contact">Contact</a></li>
+    <li><a class="navbtn" href="#contact">Résumé &amp; contact</a></li>
   </ul>
 </div></nav>
 
 <header class="hero" id="top"><div class="wrap">
-  <div class="eyebrow reveal">Data analytics · Quantitative finance · Sports modeling</div>
-  <h1 class="reveal">I build models, data pipelines and dashboards, <em>end to end</em>, and keep them running live.</h1>
-  <p class="lead reveal">Each project here starts with raw public data. I build the pipeline, fit and validate a model, and ship it as a web app or Power BI report. The work includes an NHL analytics site with in-house expected-goals and WAR models, a fantasy basketball simulation platform, an automated earnings-momentum trading strategy and a portfolio of Power BI reports.</p>
-  <div class="edu reveal"><span class="dot"></span><span><b>Stevens Institute of Technology</b> · Business &amp; Technology, concentrations in Quantitative Finance and Data Analytics</span></div>
+  <div class="eyebrow reveal">Data Analytics · Quantitative Finance</div>
+  <h1 class="reveal">Tyler Grossi</h1>
+  <p class="lead reveal">B.S. in Business &amp; Technology (Data Analytics and Quantitative Finance) and MBA in Artificial Intelligence at Stevens Institute of Technology, expected December 2027. Data Analyst Intern at LBi.</p>
+  <p class="sub reveal">This site collects projects I've designed and built independently: predictive models, data pipelines, web applications and Power BI reports. Most run live on real data, and each section below explains the models behind it and how they were validated.</p>
   <div class="cta reveal">
     <a class="btn dark" href="#work">View projects ↓</a>
-    <a class="btn light" href="https://github.com/TylerGrossi" target="_blank" rel="noopener">GitHub ↗</a>
-    <a class="btn light" href="#contact">Get in touch</a>
+    <a class="btn light" href="assets/Tyler_Grossi_Resume_Data_Analytics.pdf" target="_blank" rel="noopener">Résumé · Data Analytics</a>
+    <a class="btn light" href="assets/Tyler_Grossi_Resume_Quant_Finance.pdf" target="_blank" rel="noopener">Résumé · Quant Finance</a>
+    <a class="btn light" href="mailto:tylerjgrossi@gmail.com">Email</a>
+    <a class="btn light" href="https://www.linkedin.com/in/tyler-grossi" target="_blank" rel="noopener">LinkedIn ↗</a>
   </div>
+  <p class="reveal" style="margin-top:14px;font-size:14px;color:var(--muted)"><a href="mailto:tylerjgrossi@gmail.com" style="text-decoration:none;border-bottom:1px solid var(--line)">tylerjgrossi@gmail.com</a> · Greater New York Area</p>
   <div class="kpis reveal">
     <div class="kpi"><div class="v">5</div><div class="l">Live web apps</div></div>
-    <div class="kpi"><div class="v">9</div><div class="l">Power BI reports</div></div>
+    <div class="kpi"><div class="v">10</div><div class="l">Power BI reports</div></div>
     <div class="kpi"><div class="v">10+</div><div class="l">Models fitted &amp; validated</div></div>
-    <div class="kpi"><div class="v">1,200+</div><div class="l">Commits since Nov 2024</div></div>
+    <div class="kpi"><div class="v">1,000+</div><div class="l">Commits since Nov 2024</div></div>
   </div>
 </div></header>
 
 <section id="work" style="padding-top:40px"><div class="wrap">
   <div class="sec-head reveal">
     <h2>Selected work</h2>
-    <p>The largest builds. Each one has its own data pipeline, models and front end. Click a screenshot to open the live project.</p>
+    <p>The largest builds, each with its own data pipeline, models and front end. Click a screenshot to open the live project.</p>
   </div>
 
-  <!-- NHL -->
+  <!-- Golf -->
   <article class="case reveal" style="--accent:var(--forest)">
     <div class="media">
-      <a class="shot-link" href="https://tygr.vercel.app/leaderboards" target="_blank" rel="noopener" aria-label="Open Puck Engine">
-        <div class="frame"><div class="chrome"><i></i><i></i><i></i><span class="url">tygr.vercel.app</span></div>
-        <div class="screen"><img src="assets/shots/nhl.jpg" alt="Puck Engine NHL leaderboard page" width="1280" height="800"><span class="open-pill">Open ↗</span></div></div>
+      <a class="shot-link" href="https://app.powerbi.com/view?r=eyJrIjoiMmYxZDIyMDAtM2U3Yi00YzExLTlmODAtY2Q4OGYyZmUyYTRlIiwidCI6IjhkMWE2OWVjLTAzYjUtNDM0NS1hZTIxLWRhZDExMmY1ZmI0ZiIsImMiOjN9" target="_blank" rel="noopener" aria-label="Open the Golf Dashboard">
+        <div class="frame"><div class="chrome"><i></i><i></i><i></i><span class="url">app.powerbi.com</span></div>
+        <div class="screen"><img src="assets/shots/golf.jpg" alt="Golf Dashboard overview: handicap trend, best rounds and score distribution" width="1280" height="800"><span class="open-pill">Open ↗</span></div></div>
       </a>
     </div>
     <div>
-      <div class="tagrow"><span class="cat" style="color:var(--forest)">Sports analytics · Machine learning</span><span class="badge b-live">Live web app</span></div>
-      <h3>Puck Engine: NHL advanced stats</h3>
-      <p class="plain">A public NHL analytics site where every advanced stat is computed in house from the league's raw play-by-play and shift data, instead of being bought from third-party providers.</p>
-      <h4>What I built</h4>
+      <div class="tagrow"><span class="cat" style="color:var(--forest)">BI · Analytics · AI tooling</span><span class="badge b-pbi">Power BI</span></div>
+      <h3>Golf performance analytics</h3>
+      <p class="plain">Analytics on my own golf game, from round scores down to individual launch-monitor swings. The results are presented in a 22-page Power BI report and can be queried in plain language through Claude.</p>
       <ul class="pts">
-        <li><b>Expected-goals model</b> (LightGBM) that rates the scoring chance of every shot from distance, angle, shot type, rebounds and game state. The model is exported to JSON and scored in plain JavaScript, so live games are scored on the server without Python.</li>
-        <li><b>Wins Above Replacement (WAR)</b> built from shift charts with regularized adjusted plus-minus (sparse ridge regression). It replaced two third-party data sources.</li>
-        <li><b>Multi-year player projections</b> that blend weighted history with k-nearest-neighbor comparable players. 15 candidate models were compared in the backtest.</li>
-        <li><b>Trade-value model</b> fitted to 1,547 real NHL trades. It powers an "Armchair GM" tool that suggests fair trades under the salary cap.</li>
-        <li>Cut first page load from 2.14 MB to 0.78 MB (−64%) through lazy loading and caching.</li>
+        <li>The data comes from a hand-maintained 12-sheet workbook plus five datasets derived in Python.</li>
+        <li>Compares my game with two other golfers across 94 rounds and 1,638 logged holes.</li>
       </ul>
-      <div class="fstats">
-        <div class="fstat"><div class="v">0.795</div><div class="l">xG AUC on a held-out season (110,997 shots)</div></div>
-        <div class="fstat"><div class="v">0.775</div><div class="l">Next-season WAR R², backtest over 1,652 careers</div></div>
-        <div class="fstat"><div class="v">r 0.75</div><div class="l">Trade model, held-out cross-validation</div></div>
+      <h4>Models, AI &amp; numbers</h4>
+      <div class="models">
+        <div class="mr"><div class="mn">Round profiling<small>Z-scores</small></div><div class="md">Each part of the game (driving, irons, wedges, putting) is scored separately against each golfer's own baseline. Beyond ±0.5 standard deviations an area reads "on" or "off", so a round can read "driver on, putter off". The report compares average score when each area is on vs off.</div></div>
+        <div class="mr"><div class="mn">Strokes gained &amp; clutch<small>Python</small></div><div class="md">Hole-level strokes gained (off the tee, approach, putting) on simplified baselines. A clutch score compares scoring on holes 16–18 with holes 1–15, and random forest models relate putts, fairways and greens in regulation to scoring.</div></div>
+        <div class="mr"><div class="mn">Club distances<small>Launch monitor</small></div><div class="md">Sets a carry range for each club and compares smash factor to expected, which guides club selection and practice priorities.<span class="res">1,734 range shots analyzed</span></div></div>
+        <div class="mr"><div class="mn">Handicap &amp; ball flight<small>DAX</small></div><div class="md">A point-in-time handicap index (best 8 of the last 20 differentials as of any date), and ball-flight curves drawn per club from launch angle and apex, using calculated tables and trigonometry.</div></div>
+        <div class="mr"><div class="mn">Course geometry<small>Geospatial</small></div><div class="md">Downloads mapped holes, greens and hazards for 15 courses from OpenStreetMap and adds USGS lidar elevation. A tee-shot planner weighs each club's launch-monitor dispersion against bunkers, water and my measured left/right miss pattern.<span class="res">15 courses · 252 holes with mapped greens · 1,835 elevation points</span></div></div>
+        <div class="mr ai"><div class="mn">MCP server<small>AI</small></div><div class="md">66 analysis tools (scoring, handicap, club gapping, putting, shot shape, club fitting, charts) that let Claude answer questions about the data. Containerized and deployed to Google Cloud Run as a Claude connector. It redeploys after each logged round, with scale-to-zero and a $1 budget alert.<span class="res">66 tools · works in claude.ai and the Claude mobile app</span></div></div>
+        <div class="mr ai"><div class="mn">LLM evaluation<small>AI</small></div><div class="md">A harness connects a local model (Qwen3 8B via Ollama) to the server as a real MCP client and scores whether it picks the right tool and arguments. Its failures exposed data bugs rather than model errors, including a handicap formula that didn't follow the World Handicap System's best-8-of-20 rule and 9-hole rounds counted as 18.<span class="res">tool selection: real questions 14/16 → 16/16 · scripted set 40/42 → 42/42</span></div></div>
       </div>
-      <div class="stack"><span>Python</span><span>LightGBM</span><span>scikit-learn</span><span>Ridge / RAPM</span><span>JavaScript</span><span>Node.js</span><span>Vercel serverless</span><span>Turso (SQLite)</span></div>
-      <div class="actions"><a class="btn dark sm" href="https://tygr.vercel.app/leaderboards" target="_blank" rel="noopener">Open live site ↗</a></div>
+      <div class="stack"><span>Power BI</span><span>DAX</span><span>Power Query</span><span>Python</span><span>pandas</span><span>scikit-learn</span><span>MCP</span><span>Docker</span><span>Google Cloud Run</span></div>
+      <div class="actions">
+        <a class="btn dark sm" href="https://app.powerbi.com/view?r=eyJrIjoiMmYxZDIyMDAtM2U3Yi00YzExLTlmODAtY2Q4OGYyZmUyYTRlIiwidCI6IjhkMWE2OWVjLTAzYjUtNDM0NS1hZTIxLWRhZDExMmY1ZmI0ZiIsImMiOjN9" target="_blank" rel="noopener">Open dashboard ↗</a>
+        <a class="btn light sm" href="https://github.com/TylerGrossi/Golf-Stats" target="_blank" rel="noopener">View code</a>
+      </div>
     </div>
   </article>
 
@@ -270,23 +298,26 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
       </a>
     </div>
     <div>
-      <div class="tagrow"><span class="cat" style="color:var(--forest)">Simulation · Optimization</span><span class="badge b-live">Live web app</span></div>
-      <h3>FBB Sim: fantasy basketball simulator</h3>
-      <p class="plain">A simulation and decision platform for a 15-category ESPN fantasy basketball league. It turns live league data into win probabilities, playoff odds and recommended roster moves.</p>
-      <h4>What I built</h4>
+      <div class="tagrow"><span class="cat" style="color:var(--forest)">Simulation · Optimization · ML</span><span class="badge b-live">Live web app</span></div>
+      <h3>FBB Sim: fantasy basketball analytics</h3>
+      <p class="plain">A simulation and decision platform for my 15-category ESPN fantasy basketball league. It turns live league data into win probabilities, playoff odds and recommended roster moves.</p>
       <ul class="pts">
-        <li><b>Probabilistic matchup model:</b> each category is projected as a distribution, and correlated outcomes are drawn with a Gaussian copula (10,000 draws). It runs in the browser in under 1 ms, so every what-if updates instantly.</li>
-        <li><b>Model parameters estimated from a full season of box scores</b> instead of hand-tuned guesses. One example: free-throw variance had been set about 3× too low.</li>
-        <li><b>Monte Carlo season and playoff simulator</b> that accounts for injuries. Drawing each player's total in closed form made it <b>~40× faster</b> (385 ms → 10 ms) with an identical distribution.</li>
-        <li><b>Week-long add/drop optimizer</b> (greedy search plus local search), validated against exhaustive brute-force search.</li>
-        <li><b>Injury availability models</b> (calibrated gradient boosting) trained on 79,697 official NBA injury-report listings. I caught and removed a label leak that had inflated an early AUC to 0.988.</li>
+        <li>Live league data refreshes every 2 hours during the season (GitHub Actions) into a 35-page Next.js app.</li>
+        <li>About 40,000 lines of TypeScript and 11,000 lines of Python. It started as a Streamlit app and moved to Next.js with the same calculation engine.</li>
       </ul>
-      <div class="fstats">
-        <div class="fstat"><div class="v">~40×</div><div class="l">Faster season simulation</div></div>
-        <div class="fstat"><div class="v">0.80</div><div class="l">Game-day availability AUC (vs 0.72 baseline)</div></div>
-        <div class="fstat"><div class="v">15×</div><div class="l">Faster data pipeline after profiling</div></div>
+      <h4>Models, AI &amp; numbers</h4>
+      <div class="models">
+        <div class="mr"><div class="mn">Matchup model<small>Probabilistic</small></div><div class="md">Each team's final total in each of 15 categories is modeled as a normal distribution. Variance has two parts: per-game noise and projection error. Correlated outcomes are drawn with a Gaussian copula, with an exact Poisson-binomial fallback.<span class="res">10,000 seeded draws · 0.17 ms per evaluation in the browser</span></div></div>
+        <div class="mr"><div class="mn">Parameter fitting<small>Estimation</small></div><div class="md">Variances, out-of-sample projection error and a 15×15 category correlation matrix are measured from a full season of box scores, replacing hand-picked guesses.<span class="res">FT variance corrected 0.2 → 0.67 · FGM–PTS correlation 0.94</span></div></div>
+        <div class="mr"><div class="mn">Season simulator<small>Monte Carlo</small></div><div class="md">Simulates the rest of the season and the playoff bracket 10,000 times, using ESPN's injury return dates and the daily lineup cap. Each player's total is drawn in closed form instead of game by game.<span class="res">385 ms → 10 ms (~40× faster), identical distribution</span></div></div>
+        <div class="mr"><div class="mn">Player value<small>Z-scores</small></div><div class="md">Standard deviations above replacement level across 15 categories, with volume-weighted shooting percentages, so 4-of-6 counts twice as much as 2-of-3.</div></div>
+        <div class="mr"><div class="mn">Roster optimizers<small>Optimization</small></div><div class="md">Streaming analysis scores every add/drop pair. The Week Planner plans a whole week of adds, drops and IR activations with greedy search plus a local-search pass under the weekly acquisition limit. On crowded days, a lineup optimizer tries every legal ESPN lineup and picks the one that wins the most expected categories.<span class="res">1,274 scenarios in 13.5 ms · ~10–40 ms per planner step on a 126-player pool</span></div></div>
+        <div class="mr"><div class="mn">Injury availability<small>Gradient boosting</small></div><div class="md">Two calibrated models predict each player's chance of playing, built from official NBA injury reports (2018–2026, parsed from PDFs) joined to box scores. Validated walk-forward by season, with a label leak caught and removed (it had inflated AUC to 0.988).<span class="res">game-day AUC 0.80 vs 0.72 · log loss 0.514 vs 0.554 · better in 6 of 6 seasons</span></div></div>
+        <div class="mr ai"><div class="mn">AI agent<small>LLM tool calling</small></div><div class="md">A Gemini agent answers league questions in plain language. It never does the math itself. It calls tools that return the model's real numbers, then explains a recommendation grounded in them.</div></div>
+        <div class="mr"><div class="mn">Performance<small>Engineering</small></div><div class="md">Profiling-driven fixes to the pipeline and front end, including replacing Plotly with hand-built SVG charts.<span class="res">API calls 7.45 s → 0.48 s · JS bundle 10.7 → 5.7 MB</span></div></div>
       </div>
-      <div class="stack"><span>Python</span><span>pandas / NumPy</span><span>TypeScript</span><span>Next.js / React</span><span>Redis</span><span>GitHub Actions</span><span>LLM tool calling</span></div>
+      <p class="note">A forecast log records each week's prediction before games are played, so calibration can be measured honestly over the season.</p>
+      <div class="stack"><span>Python</span><span>NumPy</span><span>pandas</span><span>TypeScript</span><span>Next.js / React</span><span>Redis</span><span>GitHub Actions</span><span>Gemini API</span></div>
       <div class="actions">
         <a class="btn dark sm" href="https://fbbsim.vercel.app/" target="_blank" rel="noopener">Open live app ↗</a>
         <a class="btn light sm" href="https://github.com/TylerGrossi/Fantasy-Basketball-Simulation-Model" target="_blank" rel="noopener">View code</a>
@@ -294,41 +325,33 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     </div>
   </article>
 
-  <!-- Earnings -->
-  <article class="case reveal" style="--accent:var(--plum)">
+  <!-- NHL -->
+  <article class="case reveal" style="--accent:var(--forest)">
     <div class="media">
-      <a class="shot-link" href="https://stockscrapper.streamlit.app/" target="_blank" rel="noopener" aria-label="Open the Earnings Momentum app">
-        <div class="frame"><div class="chrome"><i></i><i></i><i></i><span class="url">stockscrapper.streamlit.app</span></div>
-        <div class="screen"><img src="assets/shots/earnings-app.jpg" alt="Earnings Momentum Streamlit app showing stop-loss optimization results" width="1280" height="800"><span class="open-pill">Open ↗</span></div></div>
+      <a class="shot-link" href="https://tygr.vercel.app/leaderboards" target="_blank" rel="noopener" aria-label="Open Puck Engine">
+        <div class="frame"><div class="chrome"><i></i><i></i><i></i><span class="url">tygr.vercel.app</span></div>
+        <div class="screen"><img src="assets/shots/nhl.jpg" alt="Puck Engine NHL leaderboard page" loading="lazy" width="1280" height="800"><span class="open-pill">Open ↗</span></div></div>
       </a>
-      <div class="minis">
-        <a href="https://app.powerbi.com/view?r=eyJrIjoiZWRlNGNjYTgtODNhYy00MjBjLThhMjctMzgyNmYzNzIwZGRiIiwidCI6IjhkMWE2OWVjLTAzYjUtNDM0NS1hZTIxLWRhZDExMmY1ZmI0ZiIsImMiOjN9" target="_blank" rel="noopener"><img src="assets/shots/earnings-pbi.jpg" alt="Finance Models Power BI report" loading="lazy" width="1280" height="800"><span>Performance &amp; risk report<small>Power BI · Sharpe, volatility, VaR</small></span></a>
-        <a href="https://tylergrossi.shinyapps.io/Portfolio-Optimizer/" target="_blank" rel="noopener"><img src="assets/shots/optimizer.jpg" alt="Portfolio Optimizer R Shiny app" loading="lazy" width="1280" height="800"><span>Portfolio optimizer<small>R Shiny · min-variance &amp; max-Sharpe</small></span></a>
-      </div>
     </div>
     <div>
-      <div class="tagrow"><span class="cat" style="color:var(--plum)">Quantitative finance · Automation</span><span class="badge b-live">Live web app</span></div>
-      <h3>Earnings Momentum Model</h3>
-      <p class="plain">A trading strategy that buys stocks showing positive momentum during the week they report earnings. It is automated end to end, from data collection through backtesting to placing (paper) trades.</p>
-      <h4>What I built</h4>
+      <div class="tagrow"><span class="cat" style="color:var(--forest)">Sports analytics · Machine learning</span><span class="badge b-live">Live web app</span></div>
+      <h3>Puck Engine: NHL advanced stats</h3>
+      <p class="plain">A public NHL analytics site with leaderboards, player and goalie cards, multi-year projections and an "Armchair GM" trade tool. Every advanced stat is computed in house from the NHL's raw play-by-play and shift data.</p>
       <ul class="pts">
-        <li><b>Automated data pipeline:</b> a GitHub Actions job runs twice a day. It scrapes momentum signals, validates earnings dates against a second source and tracks 1- to 90-day returns.</li>
-        <li><b>Realistic backtester</b> using hourly prices that takes the actual loss when a stock gaps down past its stop, instead of assuming a perfect fill.</li>
-        <li><b>ML classifier</b> (random forest / gradient boosting) that scores each new trade's probability of a positive 5-day return.</li>
-        <li><b>Broker integration:</b> places market-on-close orders through the Alpaca API in a paper trading account.</li>
-        <li>Streamlit app with a live scanner, stop-loss analysis, an embedded Power BI risk report, a mean-variance optimizer and an AI assistant.</li>
+        <li>Replaced two third-party data providers (HockeyStats and MoneyPuck) entirely as of October 2026.</li>
+        <li>Built solo: 506 commits since February 2026, and first page load cut from 2.14 MB to 0.78 MB (−64%).</li>
       </ul>
-      <div class="fstats">
-        <div class="fstat"><div class="v">572</div><div class="l">Earnings events tracked</div></div>
-        <div class="fstat"><div class="v">+2.7%</div><div class="l">Mean 5-day return (median +1.1%)</div></div>
-        <div class="fstat"><div class="v">56%</div><div class="l">Of events positive after 5 days</div></div>
+      <h4>Models, AI &amp; numbers</h4>
+      <div class="models">
+        <div class="mr"><div class="mn">Expected goals<small>LightGBM</small></div><div class="md">Shot model on distance, angle, shot type, preceding event, time since last event, rebounds, strength state and shift length. A single model with indicator columns beat separate per-state models on every strength state. The trees are exported to JSON and scored in plain JavaScript for live games.<span class="res">held-out season, 110,997 shots: AUC 0.795 · log loss 0.213 · 7,673 xG vs 7,894 goals</span></div></div>
+        <div class="mr"><div class="mn">WAR<small>Ridge / RAPM</small></div><div class="md">Builds stints from shift charts and fits regularized adjusted plus-minus with sparse ridge regression, validated against established public sources.<span class="res">high-danger chances within 0.4% of Natural Stat Trick · all 3,006 MoneyPuck lines matched within 0.3%</span></div></div>
+        <div class="mr"><div class="mn">Projections<small>kNN + weighting</small></div><div class="md">Multi-year projections of WAR, points and goals that blend weighted history, k-nearest-neighbor comparable players (k = 40, within 2 years of age) and a persistence term. 15 candidate models were compared.<span class="res">1,652 careers, 8,313 seasons: WAR R² 0.775 · points R² 0.727 · goals R² 0.698</span></div></div>
+        <div class="mr"><div class="mn">Trade value<small>Fitted model</small></div><div class="md">Prices players, prospects and picks (contract, age, no-trade clauses) by minimizing value imbalance across real trades. A change is accepted only if it beats the baseline by more than 2 standard errors on paired folds.<span class="res">1,547 trades · held-out r = 0.74 (5-fold × 5)</span></div></div>
+        <div class="mr"><div class="mn">Contracts<small>Regression</small></div><div class="md">Predicts contract term and cap hit, with a separate top-of-market model for elite players and a goalie-specific regression.<span class="res">trained on 6,363 skater + 643 goalie contracts through 2024</span></div></div>
+        <div class="mr"><div class="mn">Prospects &amp; playoffs<small>Ordinal / logistic</small></div><div class="md">An ordinal model of NHL outcome tiers by development season, and a logistic model of playoff games on points difference plus home ice.<span class="res">3,702 prospect rows (2008–17 drafts) · 866 playoff games</span></div></div>
       </div>
-      <p class="note">Tracked Nov 2025 – May 2026 over 548 events with complete 5-day returns; raw returns before transaction costs. Trading runs on a paper account.</p>
-      <div class="stack"><span>Python</span><span>pandas</span><span>scikit-learn</span><span>BeautifulSoup</span><span>Streamlit</span><span>GitHub Actions</span><span>Alpaca API</span><span>Power BI</span><span>R Shiny</span></div>
-      <div class="actions">
-        <a class="btn dark sm" href="https://stockscrapper.streamlit.app/" target="_blank" rel="noopener">Open live app ↗</a>
-        <a class="btn light sm" href="https://github.com/TylerGrossi/Earnings-Momentum-Model" target="_blank" rel="noopener">View code</a>
-      </div>
+      <div class="stack"><span>Python</span><span>LightGBM</span><span>scikit-learn</span><span>JavaScript</span><span>Node.js</span><span>Vercel serverless</span><span>Turso (SQLite)</span></div>
+      <div class="actions"><a class="btn dark sm" href="https://tygr.vercel.app/leaderboards" target="_blank" rel="noopener">Open live site ↗</a></div>
     </div>
   </article>
 
@@ -343,20 +366,25 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     <div>
       <div class="tagrow"><span class="cat" style="color:var(--clay)">Machine learning · ETL</span><span class="badge b-pbi">Power BI</span></div>
       <h3>Movie rating predictor</h3>
-      <p class="plain">A pipeline that learns my taste from 312 films I've rated, then predicts my score for each of the 762 films on my watchlist. The results feed an 11-page Power BI report.</p>
-      <h4>What I built</h4>
+      <p class="plain">A pipeline that learns my taste from 314 films I've rated and predicts my score for each of the 774 films on my watchlist. The results feed an 11-page Power BI report.</p>
       <ul class="pts">
-        <li><b>ETL:</b> exports my IMDb ratings, then enriches every film through the OMDb and TMDB APIs, with incremental caching and handling for rate limits.</li>
-        <li><b>Found and fixed target leakage:</b> features built from my own scores were leaking the answer into training. The original model's cross-validated R² of 0.803 dropped to −0.12 once I measured it properly.</li>
-        <li><b>Rebuilt the model honestly:</b> every score-based feature is recomputed inside each CV fold. It combines a critics baseline, personal taste deviations and collaborative filtering from the 32-million-rating MovieLens dataset.</li>
-        <li>On films I watched later (a time-based test), the final model beat the previous version on 5 of 5 folds.</li>
+        <li><b>ETL:</b> a Selenium export from IMDb, then enrichment through the OMDb and TMDB APIs (Rotten Tomatoes scores, cast, crew, keywords, box office), with caching, resume-after-interruption and handling of a 1,000-call daily limit.</li>
+        <li><b>Data quality:</b> title-plus-year matching stops remakes being confused, and newly rated watchlist films move into the training set automatically.</li>
       </ul>
+      <h4>Models, AI &amp; numbers</h4>
+      <div class="models">
+        <div class="mr"><div class="mn">Baseline models<small>Tree ensembles</small></div><div class="md">Random forest, gradient boosting and XGBoost regressors compared with k-fold cross-validation, plus a classifier for the probability I rate a film 8 or higher.</div></div>
+        <div class="mr"><div class="mn">Leakage audit<small>Validation</small></div><div class="md">Found three separate leaks. Score-based averages included each film's own score: 173 of 311 films had a one-film writer, so "writer score" was nearly the label. The fix was to recompute every score-derived feature inside each fold.<span class="res">original CV R² 0.803 → −0.12 once measured properly</span></div></div>
+        <div class="mr"><div class="mn">Collaborative filtering<small>MovieLens 32M</small></div><div class="md">Matched my films to the MovieLens research dataset by IMDb ID, then added look-alike-user and item-item similarity signals, both chosen inside each CV fold.<span class="res">286 of 311 rated and 665 of 774 watchlist films matched · 11.0M ratings from 200,731 users</span></div></div>
+        <div class="mr"><div class="mn">Final model<small>Stacked ensemble</small></div><div class="md">A critics baseline plus a personal-deviation model, collaborative signals, plot neighbours and genre-avoidance penalties, combined in a non-negative stack of ridge, random forest and gradient boosting.<span class="res">later watches: MAE 0.976 vs 1.017 critics-only · beat previous model on 5 of 5 time folds · rank correlation 0.518 vs 0.479</span></div></div>
+        <div class="mr"><div class="mn">Plot embeddings<small>NLP experiment</small></div><div class="md">Embedded 1,086 plots with a sentence-transformer (all-MiniLM-L6-v2) and tested three feature designs. None beat the baseline under a 2-standard-error rule, so they weren't adopted.</div></div>
+      </div>
       <div class="fstats">
-        <div class="fstat"><div class="v">0.976</div><div class="l">MAE on later watches (critics-only: 1.017)</div></div>
+        <div class="fstat"><div class="v">1.059</div><div class="l">MAE, random 5-fold × 3 (critics-only 1.093)</div></div>
         <div class="fstat"><div class="v">3</div><div class="l">Separate leaks found &amp; removed</div></div>
         <div class="fstat"><div class="v">1,000+</div><div class="l">Films enriched via 2 APIs</div></div>
       </div>
-      <div class="stack"><span>Python</span><span>scikit-learn</span><span>XGBoost</span><span>Selenium</span><span>REST APIs</span><span>Cross-validation</span><span>Power BI</span></div>
+      <div class="stack"><span>Python</span><span>scikit-learn</span><span>XGBoost</span><span>Selenium</span><span>REST APIs</span><span>sentence-transformers</span><span>Power BI</span></div>
       <div class="actions">
         <a class="btn dark sm" href="https://app.powerbi.com/view?r=eyJrIjoiYjUzM2RjNDYtNDRkNy00MDVkLTk4ZTEtOWQ2NTM0MDZhOTlmIiwidCI6IjhkMWE2OWVjLTAzYjUtNDM0NS1hZTIxLWRhZDExMmY1ZmI0ZiIsImMiOjN9" target="_blank" rel="noopener">Open dashboard ↗</a>
         <a class="btn light sm" href="https://github.com/TylerGrossi/Movie-Rankings" target="_blank" rel="noopener">View code</a>
@@ -364,66 +392,46 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     </div>
   </article>
 
-  <!-- Golf -->
-  <article class="case reveal" style="--accent:var(--forest)">
+  <!-- Earnings -->
+  <article class="case reveal" style="--accent:var(--plum)">
     <div class="media">
-      <a class="shot-link" href="https://app.powerbi.com/view?r=eyJrIjoiMmYxZDIyMDAtM2U3Yi00YzExLTlmODAtY2Q4OGYyZmUyYTRlIiwidCI6IjhkMWE2OWVjLTAzYjUtNDM0NS1hZTIxLWRhZDExMmY1ZmI0ZiIsImMiOjN9" target="_blank" rel="noopener" aria-label="Open the Golf Dashboard">
-        <div class="frame"><div class="chrome"><i></i><i></i><i></i><span class="url">app.powerbi.com</span></div>
-        <div class="screen"><img src="assets/shots/golf.jpg" alt="Golf Dashboard overview: handicap trend, best rounds and score distribution" loading="lazy" width="1280" height="800"><span class="open-pill">Open ↗</span></div></div>
+      <a class="shot-link" href="https://stockscrapper.streamlit.app/" target="_blank" rel="noopener" aria-label="Open the Earnings Momentum app">
+        <div class="frame"><div class="chrome"><i></i><i></i><i></i><span class="url">stockscrapper.streamlit.app</span></div>
+        <div class="screen"><img src="assets/shots/earnings-app.jpg" alt="Earnings Momentum Streamlit app showing stop-loss optimization results" loading="lazy" width="1280" height="800"><span class="open-pill">Open ↗</span></div></div>
       </a>
+      <div class="minis">
+        <a href="https://app.powerbi.com/view?r=eyJrIjoiZWRlNGNjYTgtODNhYy00MjBjLThhMjctMzgyNmYzNzIwZGRiIiwidCI6IjhkMWE2OWVjLTAzYjUtNDM0NS1hZTIxLWRhZDExMmY1ZmI0ZiIsImMiOjN9" target="_blank" rel="noopener"><img src="assets/shots/earnings-pbi.jpg" alt="Finance Models Power BI report" loading="lazy" width="1280" height="800"><span>Performance &amp; risk report<small>Power BI · Sharpe, volatility, VaR</small></span></a>
+        <a href="https://tylergrossi.shinyapps.io/Portfolio-Optimizer/" target="_blank" rel="noopener"><img src="assets/shots/optimizer.jpg" alt="Portfolio Optimizer R Shiny app" loading="lazy" width="1280" height="800"><span>Portfolio optimizer<small>R Shiny · min-variance &amp; max-Sharpe</small></span></a>
+      </div>
     </div>
     <div>
-      <div class="tagrow"><span class="cat" style="color:var(--forest)">BI · AI tooling</span><span class="badge b-pbi">Power BI</span></div>
-      <h3>Golf analytics &amp; AI assistant</h3>
-      <p class="plain">Personal golf analytics, from round scores down to individual launch-monitor swings. It's presented in a 22-page Power BI report and can be queried conversationally through Claude.</p>
-      <h4>What I built</h4>
+      <div class="tagrow"><span class="cat" style="color:var(--plum)">Quantitative finance · Automation</span><span class="badge b-live">Live web app</span></div>
+      <h3>Earnings Momentum Model</h3>
+      <p class="plain">A trading strategy that buys stocks with positive momentum (20-day SMA above 50-day, plus a Barchart buy signal) during the week they report earnings, with a −10% stop-loss and a 5-day exit. It is automated end to end, from data collection to placing paper trades.</p>
       <ul class="pts">
-        <li><b>22-page Power BI report</b> on a ~30-table model, with heavy Power Query shaping. A point-in-time handicap index and ball-flight trajectories are computed in DAX.</li>
-        <li><b>MCP server with 66 analysis tools</b> (strokes gained, club gapping, putting, shot shape), deployed to Google Cloud Run as a connector for Claude, with cost guardrails.</li>
-        <li><b>LLM evaluation harness</b> that scores whether a model calls the right tool. Iterating on its failures raised accuracy on real questions to 16/16 and exposed three data bugs, including a handicap formula error.</li>
-        <li>Course geometry from OpenStreetMap and USGS lidar elevation, feeding a tee-shot club planner.</li>
+        <li>About 7,400 lines of Python. 640 commits since November 2024: 237 of my own and 403 automated data updates from the pipeline.</li>
+        <li>The Streamlit app combines a live scanner, stop-loss analysis, EPS beat/miss analysis, an embedded Power BI report and a portfolio optimizer.</li>
       </ul>
+      <h4>Models, AI &amp; numbers</h4>
+      <div class="models">
+        <div class="mr"><div class="mn">Data pipeline<small>GitHub Actions</small></div><div class="md">Runs twice a day (7 AM and 4 PM ET). It scrapes Finviz and Barchart for signals, validates earnings dates against yfinance, and records 1- to 90-day returns, EPS surprise, valuation fields and hourly prices.<span class="res">614 earnings events tracked</span></div></div>
+        <div class="mr"><div class="mn">Backtester<small>Hourly data</small></div><div class="md">Stop-loss backtest on hourly prices that takes the actual gap loss when a stock opens below its stop, instead of assuming a perfect fill. It compares stop levels against buy-and-hold.</div></div>
+        <div class="mr"><div class="mn">Win probability<small>Classifier</small></div><div class="md">A random forest / gradient boosting classifier predicts a positive 5-day return from P/E, beta, market cap, sector and earnings timing, and scores each new entry in the app.</div></div>
+        <div class="mr"><div class="mn">Risk reporting<small>Power BI</small></div><div class="md">Compares 3-day and 5-day holds on win rate, annualized return, Sharpe ratio, weekly and annualized volatility, 95% VaR and peak capital required.</div></div>
+        <div class="mr"><div class="mn">Execution<small>Alpaca API</small></div><div class="md">A runner reads the day's signals and places market-on-close orders at 3:55 PM ET in a paper trading account.</div></div>
+        <div class="mr ai"><div class="mn">AI assistant<small>Gemini · MCP</small></div><div class="md">A Gemini assistant in the app answers questions about the strategy data, and an MCP server exposes the same data to Claude.</div></div>
+      </div>
       <div class="fstats">
-        <div class="fstat"><div class="v">1,584</div><div class="l">Holes logged across 91 rounds</div></div>
-        <div class="fstat"><div class="v">66</div><div class="l">MCP tools for Claude</div></div>
-        <div class="fstat"><div class="v">16/16</div><div class="l">Correct tool selection on real questions</div></div>
+        <div class="fstat"><div class="v">599</div><div class="l">Events with complete 5-day returns</div></div>
+        <div class="fstat"><div class="v">+2.55%</div><div class="l">Mean 5-day return (median +1.0%)</div></div>
+        <div class="fstat"><div class="v">55%</div><div class="l">Of trades positive after 5 days (331 of 599)</div></div>
       </div>
-      <div class="stack"><span>Power BI</span><span>DAX</span><span>Power Query</span><span>Python</span><span>MCP</span><span>Docker</span><span>Google Cloud Run</span><span>LLM evals</span></div>
+      <p class="note">Earnings dates Nov 2025 – May 2026; returns are before transaction costs. Trading runs on a paper account.</p>
+      <div class="stack"><span>Python</span><span>pandas</span><span>scikit-learn</span><span>BeautifulSoup</span><span>yfinance</span><span>Streamlit</span><span>GitHub Actions</span><span>Alpaca API</span><span>Power BI</span><span>Gemini API</span></div>
       <div class="actions">
-        <a class="btn dark sm" href="https://app.powerbi.com/view?r=eyJrIjoiMmYxZDIyMDAtM2U3Yi00YzExLTlmODAtY2Q4OGYyZmUyYTRlIiwidCI6IjhkMWE2OWVjLTAzYjUtNDM0NS1hZTIxLWRhZDExMmY1ZmI0ZiIsImMiOjN9" target="_blank" rel="noopener">Open dashboard ↗</a>
-        <a class="btn light sm" href="https://github.com/TylerGrossi/Golf-Stats" target="_blank" rel="noopener">View code</a>
+        <a class="btn dark sm" href="https://stockscrapper.streamlit.app/" target="_blank" rel="noopener">Open live app ↗</a>
+        <a class="btn light sm" href="https://github.com/TylerGrossi/Earnings-Momentum-Model" target="_blank" rel="noopener">View code</a>
       </div>
-    </div>
-  </article>
-
-  <!-- Big Data Bowl -->
-  <article class="case reveal" style="--accent:var(--clay)">
-    <div class="media">
-      <div class="panel">
-        <div>
-          <div class="cat" style="color:var(--clay)">Research question</div>
-          <p class="big" style="margin-top:12px">Do the mechanics of NFL Combine route drills predict how well a receiver gets open in the NFL?</p>
-        </div>
-        <div class="q">
-          <span><b>106</b> receivers · 10 Hz sensor tracking</span>
-          <span><b>27,687</b> regular-season routes</span>
-          <span><b>100</b> metric × outcome tests, FDR-controlled</span>
-          <span><b>Jan 6, 2027</b> submission deadline</span>
-        </div>
-      </div>
-    </div>
-    <div>
-      <div class="tagrow"><span class="cat" style="color:var(--clay)">Statistics · Research</span><span class="badge b-prog">In progress</span></div>
-      <h3>NFL Big Data Bowl 2027</h3>
-      <p class="plain">A Kaggle competition entry that uses player-tracking data to test whether how a receiver brakes and turns in Combine drills predicts his NFL production.</p>
-      <h4>What I'm doing</h4>
-      <ul class="pts">
-        <li><b>Physics-based features:</b> showed the provided acceleration field couldn't separate braking from turning, then rebuilt velocity and acceleration vectors from raw coordinates.</li>
-        <li><b>Reliability before validity:</b> core metrics repeat at r = 0.96–0.98 across attempts.</li>
-        <li><b>Multiple-comparison control:</b> screened 100 metric × outcome pairs with Benjamini–Hochberg FDR. Braking showed no effect, and I report that null result rather than cherry-picking.</li>
-        <li><b>Bayesian errors-in-variables model:</b> receivers who turn hard at speed earn more targets per route (+0.43 SD, 90% credible interval 0.21–0.65). The finding is now under a pre-registered test on the 2026 season.</li>
-      </ul>
-      <div class="stack"><span>Python</span><span>polars</span><span>SciPy</span><span>Hierarchical Bayesian models</span><span>Ridge regression</span><span>Plotly Dash</span><span>pytest</span></div>
     </div>
   </article>
 
@@ -433,41 +441,49 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     <p>Smaller apps and reports, each live.</p>
   </div>
   <div class="grid">
-    <article class="card reveal">
-      <a class="shot-link" href="https://app.powerbi.com/view?r=eyJrIjoiMmEzZmRhYzMtNDkzYi00YTBkLWJhM2YtYjQwYTUzNjEzZmUzIiwidCI6IjhkMWE2OWVjLTAzYjUtNDM0NS1hZTIxLWRhZDExMmY1ZmI0ZiIsImMiOjN9" target="_blank" rel="noopener" aria-label="Open Pizza dashboard"><div class="frame"><div class="screen"><img src="assets/shots/pizza.jpg" alt="Pizza ratings Power BI report with map" loading="lazy" width="1280" height="800"><span class="open-pill">Open ↗</span></div></div></a>
-      <div class="meta"><span class="cat" style="color:var(--clay)">Regression · BI</span><span class="badge b-pbi">Power BI</span></div>
-      <h5>Pizza ratings model</h5>
-      <p>A regression model on critic scores and pizza style ranks 112 unvisited pizzerias. The report adds drive times, Azure Maps and a dynamic top-10 photo gallery built in DAX.</p>
-      <div class="cstats"><span>97 rated</span><span>91 DAX measures</span></div>
-    </article>
-    <article class="card reveal">
-      <a class="shot-link" href="https://trade-dashboard-c7dm.onrender.com/" target="_blank" rel="noopener" aria-label="Open Trading Backtest Dashboard"><div class="frame"><div class="screen"><img src="assets/shots/trade.jpg" alt="Trading Backtest Dashboard" loading="lazy" width="1280" height="800"><span class="open-pill">Open ↗</span></div></div></a>
-      <div class="meta"><span class="cat" style="color:var(--plum)">Finance · Full stack</span><span class="badge b-live">Web app</span></div>
-      <h5>Trading backtest dashboard</h5>
-      <p>A full-stack app that backtests RSI mean-reversion, SMA-crossover and price-threshold strategies on historical market data.</p>
-      <div class="cstats"><span>FastAPI</span><span>React</span><span>SQLite</span></div>
-      <div class="links"><a href="https://github.com/TylerGrossi/trade-dashboard-challenge" target="_blank" rel="noopener">View code</a></div>
-    </article>
-    <article class="card reveal">
+    <article class="card reveal" style="--accent:var(--plum)">
       <a class="shot-link" href="https://tylergrossi.shinyapps.io/Portfolio-Optimizer/" target="_blank" rel="noopener" aria-label="Open Portfolio Optimizer"><div class="frame"><div class="screen"><img src="assets/shots/optimizer.jpg" alt="Portfolio Optimizer R Shiny app" loading="lazy" width="1280" height="800"><span class="open-pill">Open ↗</span></div></div></a>
       <div class="meta"><span class="cat" style="color:var(--plum)">Portfolio theory</span><span class="badge b-live">Web app</span></div>
       <h5>Portfolio optimizer</h5>
-      <p>Minimum-variance and maximum-Sharpe portfolios across stocks, gold, Bitcoin and VIX, solved with constrained quadratic programming.</p>
-      <div class="cstats"><span>R Shiny</span><span>1,881 lines</span></div>
+      <ul class="pts">
+        <li>Minimum-variance and maximum-Sharpe portfolios solved with constrained quadratic programming (long-only, max weight per asset), plotted on the efficient frontier.</li>
+        <li>100+ preset tickers across stocks, bonds, commodities, volatility, crypto and factor ETFs, plus any custom ticker.</li>
+        <li>Custom model assets test how the earnings strategy fits in a portfolio.</li>
+      </ul>
+      <div class="links"><span style="color:var(--muted);font-weight:400">R · Shiny</span></div>
     </article>
-    <article class="card reveal">
+    <article class="card reveal" style="--accent:var(--plum)">
+      <a class="shot-link" href="https://trade-dashboard-c7dm.onrender.com/" target="_blank" rel="noopener" aria-label="Open Trading Backtest Dashboard"><div class="frame"><div class="screen"><img src="assets/shots/trade.jpg" alt="Trading Backtest Dashboard" loading="lazy" width="1280" height="800"><span class="open-pill">Open ↗</span></div></div></a>
+      <div class="meta"><span class="cat" style="color:var(--plum)">Finance · Full stack</span><span class="badge b-live">Web app</span></div>
+      <h5>Trading backtest dashboard</h5>
+      <ul class="pts">
+        <li>Backtests five rule-based strategies (RSI and Bollinger Band mean reversion, SMA crossover, z-score mean reversion, price threshold) on any ticker and date range.</li>
+        <li>Reports P&amp;L, annualized return, Sharpe ratio, max drawdown and win rate, with signals on the price chart, an equity curve and an exportable trade log.</li>
+      </ul>
+      <div class="links"><a href="https://github.com/TylerGrossi/trade-dashboard-challenge" target="_blank" rel="noopener">View code</a><span style="color:var(--muted);font-weight:400">FastAPI · React · SQLite</span></div>
+    </article>
+    <article class="card reveal" style="--accent:var(--clay)">
+      <a class="shot-link" href="https://app.powerbi.com/view?r=eyJrIjoiMmEzZmRhYzMtNDkzYi00YTBkLWJhM2YtYjQwYTUzNjEzZmUzIiwidCI6IjhkMWE2OWVjLTAzYjUtNDM0NS1hZTIxLWRhZDExMmY1ZmI0ZiIsImMiOjN9" target="_blank" rel="noopener" aria-label="Open Pizza dashboard"><div class="frame"><div class="screen"><img src="assets/shots/pizza.jpg" alt="Pizza ratings Power BI report with map" loading="lazy" width="1280" height="800"><span class="open-pill">Open ↗</span></div></div></a>
+      <div class="meta"><span class="cat" style="color:var(--clay)">Regression · BI</span><span class="badge b-pbi">Power BI</span></div>
+      <h5>Pizza ratings model</h5>
+      <ul class="pts">
+        <li>A regression on two public critic scores and pizza style (LightGBM also tested) ranks 117 unvisited pizzerias, using 99 rated ones.</li>
+        <li>3-page report with 91 DAX measures, Azure Maps, drive times from home and a dynamic top-10 photo gallery.</li>
+      </ul>
+    </article>
+    <article class="card reveal" style="--accent:var(--forest)">
       <a class="shot-link" href="https://app.powerbi.com/view?r=eyJrIjoiZDViMzE3NmItMTI2MS00YWEyLWFlMTctOGU2NzU2ODAxNTMzIiwidCI6IjhkMWE2OWVjLTAzYjUtNDM0NS1hZTIxLWRhZDExMmY1ZmI0ZiIsImMiOjN9" target="_blank" rel="noopener" aria-label="Open Islanders dashboard"><div class="frame"><div class="screen"><img src="assets/shots/isles.jpg" alt="Islanders Home Game Scorers Power BI report" loading="lazy" width="1280" height="800"><span class="open-pill">Open ↗</span></div></div></a>
       <div class="meta"><span class="cat" style="color:var(--forest)">Sports · BI</span><span class="badge b-pbi">Power BI</span></div>
       <h5>Islanders goal-scorer picks</h5>
       <p>Tracks a family pick'em on every Islanders home game: pick accuracy by season and success rate by pick position, from an unpivoted picks table.</p>
     </article>
-    <article class="card reveal">
+    <article class="card reveal" style="--accent:var(--clay)">
       <a class="shot-link" href="https://app.powerbi.com/view?r=eyJrIjoiODAyM2E4NTMtOGRkYi00YWZkLWE2NWQtYjYxZDYyMjkwMDBhIiwidCI6IjdmZWQ0ZTgzLTE0ZWYtNDQ5Yi04NGIwLTM5YzJjZGIzMmJiMiIsImMiOjN9" target="_blank" rel="noopener" aria-label="Open MapTap dashboard"><div class="frame"><div class="screen"><img src="assets/shots/maptap.jpg" alt="MapTap Stats Power BI report" loading="lazy" width="1280" height="800"><span class="open-pill">Open ↗</span></div></div></a>
       <div class="meta"><span class="cat" style="color:var(--clay)">Personal · BI</span><span class="badge b-pbi">Power BI</span></div>
       <h5>MapTap leaderboard</h5>
       <p>A leaderboard for a daily geography game played with friends: score trends, wins by player and a date-by-player matrix.</p>
     </article>
-    <article class="card reveal">
+    <article class="card reveal" style="--accent:var(--clay)">
       <a class="shot-link" href="https://app.powerbi.com/view?r=eyJrIjoiZWJlM2I2MDAtZDgzOS00YmFjLWJiNTUtYjk0NDcyOWY5MDJkIiwidCI6IjhkMWE2OWVjLTAzYjUtNDM0NS1hZTIxLWRhZDExMmY1ZmI0ZiIsImMiOjN9" target="_blank" rel="noopener" aria-label="Open Music dashboard"><div class="frame"><div class="screen"><img src="assets/shots/music.jpg" alt="Music Listening Power BI report" loading="lazy" width="1280" height="800"><span class="open-pill">Open ↗</span></div></div></a>
       <div class="meta"><span class="cat" style="color:var(--clay)">Personal · BI</span><span class="badge b-pbi">Power BI</span></div>
       <h5>Music listening</h5>
@@ -483,15 +499,52 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   </div>
 </div></section>
 
+<section class="xp" id="experience"><div class="wrap">
+  <div class="sec-head reveal"><h2>Experience &amp; education</h2><p>Full details are in the résumé PDFs.</p></div>
+  <div class="xp-grid">
+    <div class="reveal">
+      <div class="job" style="--accent:var(--forest)">
+        <div class="job-head"><div><h3>LBi</h3><div class="role">Data Analyst Intern · Melville, NY</div></div><span class="when">May 2025 – Present</span></div>
+        <ul class="pts">
+          <li>Built 5 machine learning models using XGBoost to evaluate transfer targets and forecast player performance for a ranked Division I baseball program.</li>
+          <li>Created advanced player metrics for college baseball and basketball programs and the AUSL softball league using PCA, statistical modeling and imputation.</li>
+          <li>Developed interactive Power BI dashboards that visualize model predictions and player trends, and presented results to coaching staff to support scouting and roster decisions.</li>
+          <li>Engineered AWS cloud data pipelines with dbt to turn raw operational records into analytics-ready data models.</li>
+          <li>Designed and deployed automated Amazon QuickSight dashboards giving the College Sports Commission an overall view of school-to-athlete revenue-sharing payments across 300+ schools for compliance review.</li>
+          <li>Built 3 custom Claude skills (a dashboard designer, a QuickSight builder using the AWS CLI and a Power BI report builder) that speed up dashboard design and delivery.</li>
+        </ul>
+      </div>
+      <div class="job" style="--accent:var(--plum)">
+        <div class="job-head"><div><h3>Stevens Institute of Technology</h3><div class="role" style="color:var(--plum)">Undergraduate Research Assistant · Hoboken, NJ</div></div><span class="when">Jun – Aug 2024</span></div>
+        <ul class="pts">
+          <li>Built an AI chatbot interface that extracts, summarizes and analyzes text from uploaded PDF and TXT files.</li>
+          <li>Integrated the Claude 3 Haiku LLM through secure API calls with the Anthropic library and custom prompt engineering.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="edu-card reveal">
+      <h3>Stevens Institute of Technology</h3>
+      <div class="deg"><b>MBA, Concentration in Artificial Intelligence</b>Advanced Master's Program</div>
+      <div class="deg"><b>B.S. in Business &amp; Technology</b>Concentrations in Data Analytics &amp; Quantitative Finance</div>
+      <div class="facts">
+        <div><div class="v">3.9</div><div class="l">GPA (of 4.0)</div></div>
+        <div><div class="v">Dec 2027</div><div class="l">Expected completion</div></div>
+      </div>
+      <p class="aw"><b>Awards:</b> Edwin A. Stevens Scholarship, Presidential Scholarship, Dean's List</p>
+      <p class="aw"><b>Coursework:</b> Statistics, Applied Models &amp; Simulation, Data Analytics, Business Analytics, Data Visualization, Sports Analytics, Financial Engineering, Quantitative Finance I &amp; II, Corporate Finance, Multivariate Calculus</p>
+    </div>
+  </div>
+</div></section>
+
 <section class="bi" id="bi"><div class="wrap bi-grid">
   <div class="reveal">
     <div class="eyebrow">Business intelligence</div>
     <h2>Power BI &amp; Excel</h2>
-    <p>Nine Power BI reports and about 15 working Excel models. They range from one-page trackers to a 22-page report on a 30-table model. Three are kept as PBIP projects in git, so the DAX, Power Query and layout are version-controlled as text.</p>
+    <p>Ten Power BI reports and about 15 working Excel models, ranging from one-page trackers to a 22-page report on a 30-table model. Four are kept as PBIP projects in git, so the DAX, Power Query and layout are version-controlled as text.</p>
     <div class="kpis" style="grid-template-columns:repeat(3,1fr);margin-top:28px">
-      <div class="kpi"><div class="v" style="font-size:26px">36</div><div class="l">Pages in 3 PBIP reports</div></div>
-      <div class="kpi"><div class="v" style="font-size:26px">150+</div><div class="l">DAX measures</div></div>
-      <div class="kpi"><div class="v" style="font-size:26px">~50</div><div class="l">Model tables</div></div>
+      <div class="kpi"><div class="v" style="font-size:26px">36</div><div class="l">Pages (Golf, Movies, Pizza)</div></div>
+      <div class="kpi"><div class="v" style="font-size:26px">163</div><div class="l">DAX measures</div></div>
+      <div class="kpi"><div class="v" style="font-size:26px">47</div><div class="l">Model tables</div></div>
     </div>
   </div>
   <div class="bi-list reveal">
@@ -502,31 +555,34 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   </div>
 </div></section>
 
-<section id="skills"><div class="wrap">
-  <div class="sec-head reveal"><h2>Skills</h2><p>Tools and methods used across the projects above.</p></div>
+<section id="skills" style="padding-top:24px"><div class="wrap">
+  <div class="sec-head reveal"><h2>Skills</h2><p>Tools and methods used across the projects and roles above.</p></div>
   <div class="skills reveal">
-    <div><h6>Modeling &amp; statistics</h6><div class="tags"><span>Gradient boosting</span><span>Random forests</span><span>Ridge / logistic regression</span><span>Bayesian models</span><span>Monte Carlo</span><span>Gaussian copula</span><span>Optimization</span><span>Cross-validation</span><span>Backtesting</span><span>Leakage auditing</span></div></div>
-    <div><h6>Data engineering</h6><div class="tags"><span>ETL pipelines</span><span>API ingestion</span><span>Web scraping</span><span>GitHub Actions</span><span>Data validation</span><span>SQL / SQLite</span><span>Redis</span><span>Parquet</span></div></div>
-    <div><h6>Languages &amp; frameworks</h6><div class="tags"><span>Python</span><span>pandas / NumPy</span><span>scikit-learn</span><span>R / Shiny</span><span>TypeScript</span><span>JavaScript</span><span>Next.js / React</span><span>Node.js</span></div></div>
-    <div><h6>BI &amp; deployment</h6><div class="tags"><span>Power BI</span><span>DAX</span><span>Power Query</span><span>Excel / VBA</span><span>Streamlit</span><span>Vercel</span><span>Cloud Run</span><span>MCP servers</span></div></div>
+    <div><h6>Modeling &amp; statistics</h6><div class="tags"><span>XGBoost / LightGBM</span><span>Random forests</span><span>Ridge / logistic regression</span><span>PCA</span><span>Monte Carlo</span><span>Gaussian copula</span><span>Optimization</span><span>Cross-validation</span><span>Backtesting</span></div></div>
+    <div><h6>Programming</h6><div class="tags"><span>Python</span><span>pandas / NumPy</span><span>scikit-learn</span><span>R / Shiny</span><span>SQL</span><span>JavaScript / TypeScript</span><span>Java</span><span>Excel VBA</span></div></div>
+    <div><h6>Data &amp; BI tools</h6><div class="tags"><span>Power BI / DAX</span><span>Tableau</span><span>Amazon QuickSight</span><span>AWS</span><span>dbt</span><span>Excel</span><span>Streamlit</span><span>GitHub Actions</span></div></div>
+    <div><h6>AI</h6><div class="tags"><span>Claude skills</span><span>MCP servers</span><span>Claude Code</span><span>Anthropic API</span><span>Gemini API</span><span>LLM tool calling</span><span>LLM evaluation</span></div></div>
   </div>
 </div></section>
 
 <section id="contact" style="padding-top:24px"><div class="wrap">
   <div class="contact reveal">
     <div>
-      <h2>Interested in data analytics, data science or quant roles.</h2>
-      <p>I'm happy to walk through any of these projects: the data, the modeling choices, and what didn't work.</p>
+      <h2>Open to data analytics, data science and quantitative finance roles.</h2>
+      <p>I'm happy to walk through any of these projects in detail, including the data, the modeling choices and what didn't work.</p>
     </div>
-    <div class="cta" style="margin-top:0">
-      <!-- CONTACT: add email / LinkedIn / résumé links here -->
-      <a class="btn dark" href="https://github.com/TylerGrossi" target="_blank" rel="noopener">GitHub ↗</a>
+    <div class="clinks">
+      <a class="btn dark" href="mailto:tylerjgrossi@gmail.com">tylerjgrossi@gmail.com <span>✉</span></a>
+      <a class="btn light" href="assets/Tyler_Grossi_Resume_Data_Analytics.pdf" target="_blank" rel="noopener">Résumé · Data Analytics <span>PDF</span></a>
+      <a class="btn light" href="assets/Tyler_Grossi_Resume_Quant_Finance.pdf" target="_blank" rel="noopener">Résumé · Quant Finance <span>PDF</span></a>
+      <a class="btn light" href="https://www.linkedin.com/in/tyler-grossi" target="_blank" rel="noopener">LinkedIn <span>↗</span></a>
+      <a class="btn light" href="https://github.com/TylerGrossi" target="_blank" rel="noopener">GitHub <span>↗</span></a>
     </div>
   </div>
 </div></section>
 
 <footer><div class="wrap">
-  <span>© 2026 Tyler Grossi</span>
+  <span>© 2026 Tyler Grossi · Greater New York Area</span>
   <span>Updated November 2026</span>
 </div></footer>
 
@@ -535,7 +591,7 @@ document.body.classList.remove("no-js");
 const nav=document.getElementById("nav");
 addEventListener("scroll",()=>nav.classList.toggle("scrolled",scrollY>10),{passive:true});
 if("IntersectionObserver" in window){
-  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.06});
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}}),{threshold:.04});
   document.querySelectorAll(".reveal").forEach(el=>io.observe(el));
 }else document.querySelectorAll(".reveal").forEach(el=>el.classList.add("in"));
 </script>
